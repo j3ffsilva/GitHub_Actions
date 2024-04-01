@@ -1,0 +1,22 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "\"# GitHub Actions\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests running...\"",
+    "build": "echo \"Build running...\"",
+    "deploy": "echo \"Deploying running...\""
+  },
+  "keywords": [],
+  "author": "Jeff",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/j3ffsilva/GitHub_Actions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j3ffsilva/GitHub_Actions/issues"
+  },
+  "homepage": "https://github.com/j3ffsilva/GitHub_Actions#readme"
+}

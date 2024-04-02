@@ -1,0 +1,33 @@
+name: Node.js CI
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout code
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        
+    - name: Install Dependencies
+      run: npm install
+      
+    - name: Run Tests
+      run: npm test
+  deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/main'
+        steps:
+          - name: Deploy to Production
+            run: echo "Deploying to production server..."
+            # Aqui você colocaria o script ou comando real de deploy para seu ambiente de produção.

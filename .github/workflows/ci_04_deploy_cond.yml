@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Conditional Deploy Workflow
 
 on:
     push:

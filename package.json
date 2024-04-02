@@ -4,7 +4,7 @@
   "description": "\"# GitHub Actions\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Tests running...\"",
+    "test": "jest",
     "build": "echo \"Build running...\"",
     "deploy": "echo \"Deploying running...\""
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/j3ffsilva/GitHub_Actions/issues"
   },
-  "homepage": "https://github.com/j3ffsilva/GitHub_Actions#readme"
+  "homepage": "https://github.com/j3ffsilva/GitHub_Actions#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
